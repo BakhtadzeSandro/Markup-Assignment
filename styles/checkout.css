@@ -1,0 +1,413 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+body{
+    background: #F2F2F2;
+}
+.hover-text-orange:hover{
+    color: #D87D4A;
+}
+header{
+    background-color: black;
+    width: 100%;
+    height: 97px;
+    color: white;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 11.45%;
+}
+header nav .mobile-center-audiophile{
+    display: none;
+}
+header nav .logo p{
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+}
+header .center-items {
+    display: flex;
+    justify-content: center;
+}
+header .center-items a{
+    margin-right: 34px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+.goBack{
+    padding: 76px 11.45% 56px 11.45%;
+}
+.goBack a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+} */
+/* .checkout-content{
+    margin: 2% 11.45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.checkout-form{
+    width: 67%;
+    background-color: white;
+    height: 1160px;
+    border-radius: 8px;
+}
+.checkout-form form{
+    padding: 54px 48px;
+}
+.checkout-form form h2{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: 1.14286px;
+}
+.checkout-form form p{
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 25px;
+    letter-spacing: 0.928571px;
+    color: #D87D4A;
+    padding: 16px 0px;
+}
+.checkout-form form .firstPart{
+    display: flex;
+    justify-content: space-between;
+}
+.checkout-form form .secondPart-radio{
+    display: flex;
+    justify-content: space-between;
+}
+.checkout-form form .secondPart-radio .second-part-icon{
+    margin-top: 6%;
+}
+.checkout-form form .secondPart-radio .second-part-text{
+    width: 85%;
+}
+.form-box{
+    margin-top: 24px;
+    width: 48%;
+}
+input[type=text], input[type=email]{
+    background: #FFFFFF;
+    border: 1px solid #CFCFCF;
+    border-radius: 8px;
+    margin-top: 9px;
+    height: 56px;
+    width: 100%;
+    padding-left: 24px;
+    
+}
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #ffa500;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+input:focus{
+    outline: none;
+    border-color: #D87D4A;
+}
+.email-headings{
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+}
+.email-headings h5{
+    color: red;
+    display: none;
+}
+.checkout-form form .secondPart{
+    margin-top: 34px;
+}
+.checkout-form form .thirdPart{
+    margin-top: 34px;
+}
+.radio-box{
+    margin-top: 24px;
+    background: #FFFFFF;
+    border: 1px solid #CFCFCF;
+    border-radius: 8px;
+    height: 56px;
+}
+input[type=radio]{
+    margin: 20px;
+    font-weight: 700;
+}
+.right-side{
+    width: 48%;
+}
+.left-side{
+    margin-top: 20px;
+}
+.checkout-form .thirdPart .payments{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.last {
+    width: 100%;
+    min-height: 365px;
+    background-color: black;
+    margin-top: 150px;
+}
+.navBar{
+    width: 78%;
+    margin: 0 11%;
+}
+.orange-line-footer{
+    margin: 0 11%;
+    width: 100px;
+    height: 4px;
+    background-color: #D87D4A;
+}
+.last .navBar{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.last .navBar .itemList a{
+    padding-right: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+.last .navBar .itemList a:hover{
+    color:#D87D4A;
+}
+.last .footerText{
+    width: 78%;
+    margin: 0 11%;
+}
+.last .footerText .txt{
+    width: 500px;
+    height: 100px;
+    margin-top: 36px;
+    color: rgb(218, 208, 208);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+}
+.last .icons{
+    float: right;
+}
+.last .icons img{
+    margin-right: 15px;
+    cursor: pointer;
+}
+.images-hover:hover{
+    filter: invert(0.4) sepia(1) saturate(20) hue-rotate(0deg) brightness(0.9);
+}
+.last .footerText p{
+    color: #FFFFFF;
+    margin-top: 56px;
+}
+.summary{
+    height: 612px;
+    width: 30%;
+}
+.summary-content{
+    background-color: white;
+    height: 630px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 32px;
+}
+.summary-content .summary-product img{
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.summary-product .summary-product-info{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.summary-product{
+    display: flex;
+    align-items: center;
+}
+.summary-details{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+.pay{
+    text-align: center;
+    width: 100%;
+    height: 48px;
+    margin-top: 30px;
+    background-color: #D87D4A;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.pay:hover{
+    background-color: #FBAF85;
+} */
+/* .hamburger-menu .hamburger-menu-line{
+    background-color: #FFFFFF;
+    width: 16px;
+    height: 3px;
+    margin: 5px;
+}
+.hamburger-menu{
+    display: none;
+} */
+@media only screen and (max-width: 992px){
+    /* .checkout-content{
+        display: block;
+    }
+    .checkout-form{
+        width: 100%;
+    }
+    .summary{
+        width: 100%;
+        margin-top: 5%;
+    } */
+    /* .last{
+        height: 400px;
+    } */
+    /* .last .navBar{
+        display: block;
+    }
+    .last .navBar .itemList{
+        margin-top: 32px;
+    }
+    .last .footerText .txt{
+        width: 100%;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        color: #FFFFFF;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+    }
+    .last .icons{
+        margin-top: 50px;
+    }
+    header .center-items{
+        display: none;
+    }
+    header nav .logo{
+        display: flex;
+        gap: 30px;
+    }
+    .hamburger-menu{
+        display: block;
+    } */
+}
+@media only screen and (max-width: 768px){
+    /* header{
+        height: 92px;
+    }
+    header nav .logo p{
+        display: none;
+    }
+    header nav .mobile-center-audiophile{
+        display: block;
+        font-size: 21px;
+        font-weight: bold;
+    } */
+    header h1{
+        margin-top: 2%;
+    }
+    /* .checkout-form{
+        height: 1550px;
+    } */
+    /* .checkout-form form .firstPart{
+        flex-direction: column;
+    }
+    .checkout-form form .secondPart-radio{
+        flex-direction: column;
+    }
+    .email-headings{
+        flex-direction: column;
+        height: 100%;
+    }
+    .checkout-form form .secondPart-radio .second-part-text {
+        width: 100%;
+    }
+    .form-box{
+        width: 100%;
+    }
+    .checkout-form .thirdPart .payments{
+        flex-direction: column;
+    }
+    .right-side{
+        width: 100%;
+    } */
+    /* .last{
+        height: 680px;
+    } */
+    /* .orange-line-footer{
+        margin: auto;
+    } */
+    /* .last .navBar h3{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .last footer .navBar{
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .last .navBar .itemList{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .last .footerText{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
+    }.last .footerText .txt {
+        order: 1;
+        margin-top: 0px;
+    }
+    .last .footerText p{
+        order: 2;
+        margin-top: 0px;
+    }
+    .last .footerText .icons{
+        order: 3;
+    } */
+    /* input::placeholder{
+        font-size: 14px;
+    }
+    label{
+        font-size: 14px;
+    } */
+}

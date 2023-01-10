@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/styles/products.css">
+    <link rel="stylesheet" href="/styles/modal.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="/src/modal.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="/src/changeQuantity.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet">
+    <title>Speaker 1</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <div id="hamburger-menu" class="hamburger-menu">
+                    <div class="hamburger-menu-line"></div>
+                    <div class="hamburger-menu-line"></div>
+                    <div class="hamburger-menu-line"></div>
+                </div>
+                <p>audiophile</p>
+            </div>
+            <p class="mobile-center-audiophile">audiophile</p>
+            <div class="center-items">
+                <a class="hover-text-orange" href="index.html">HOME</a>
+                <a class="hover-text-orange" href="headphones.html">HEADPHONES</a>
+                <a class="hover-text-orange" href="speakers.html">SPEAKERS</a>
+                <a class="hover-text-orange" href="earphones.html">EARPHONES</a>
+              </div>
+            <div class="cart">
+                <img src="/images/icon-cart.svg" style="cursor: pointer;" id="modal-cart">
+            </div>
+        </nav>
+    </header>
+    <div class="goBack">
+        <a href="#" onclick="window.history.back()">Go Back</a>
+    </div>
+    <section class="product">
+        <div class="productImage">
+            <img src="images/products/speakers/image-product.jpg">
+        </div>
+        <div class="productInformation">
+            <h4>NEW PRODUCT</h4>
+            <h2>ZX9 <br>SPEAKER</h2>
+            <p>Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups.</p>
+            <h5>$ 4,500</h5>
+            <div class="buy">
+                <div class="quantity" id="quantity">
+                    <div class="minus" id="minusValue">-</div>
+                    <div class="value" data-value="0" id="currentValue">0</div>
+                    <div class="plus" id="plusValue">+</div>
+                </div>
+                <button class="orangeButton">ADD TO CART</button>
+            </div>
+        </div>
+    </section>
+    <article>
+        <div class="features">
+            <h3>FEATURES</h3>
+            <p>Connect via Bluetooth or nearly any wired source. This speaker features optical, digital coaxial, USB Type-B, stereo RCA, and stereo XLR inputs, allowing you to have up to five wired source devices connected for easy switching. Improved bluetooth technology offers near lossless audio quality at up to 328ft (100m).</p>
+            <p>Discover clear, more natural sounding highs than the competition with ZX9’s signature planar diaphragm tweeter. Equally important is its powerful room-shaking bass courtesy of a 6.5” aluminum alloy bass unit. You’ll be able to enjoy equal sound quality whether in a large room or small den. Furthermore, you will experience new sensations from old songs since it can respond to even the subtle waveforms.</p>
+        </div>
+        <div class="inTheBox">
+            <h3>IN THE BOX</h3>
+            <div class="specs">
+                <p><span style="color: rgb(243, 82, 18)">2x</span><span style="padding-left: 15px"></span>Speaker Unit</p>
+                <p><span style="color: rgb(243, 82, 18)">2x</span><span style="padding-left: 15px"></span>Speaker Cloth Panel</p>
+                <p><span style="color: rgb(243, 82, 18)">1x</span><span style="padding-left: 15px"></span>User Manual</p>
+                <p><span style="color: rgb(243, 82, 18)">1x</span><span style="padding-left: 15px"></span>3.5mm 10m Audio Cable</p>
+                <p><span style="color: rgb(243, 82, 18)">1x</span><span style="padding-left: 15px"></span>10m Optical Cable</p>
+            </div>
+        </div>
+    </article>
+    <section class="pictures">
+        <div class="leftPictures">
+            <img src="/images/products/speakers/image-gallery-1.jpg" class="imgBorders">
+            <img src="/images/products/speakers/image-gallery-2.jpg" style="padding-top: 27px;" class="imgBorders">
+        </div>
+        <div class="rightPictures">
+            <img src="/images/products/speakers/image-gallery-3.jpg" class="imgBorders">
+        </div>
+    </section>
+    <h2 class="midTitle">YOU MAY ALSO LIKE THIS</h2>
+    <section class="otherProducts">
+        <div class="prod-box">
+            <div class="prod-img">
+                <img src="/images/products/speakers/zx7/image-zx7-speaker.jpg" class="imgBorders">
+            </div>
+            <div class="prod-info">
+                <h3>ZX7 SPEAKER</h3>
+                <button class="orangeButton"><a href="product-speaker2.html">SEE PRODUCT</a></button>
+            </div>
+        </div>
+        <div class="prod-box">
+            <div class="prod-img">
+                <img src="/images/products/headphones/image-xx99-mark-one-headphones.jpg" class="imgBorders">
+            </div>
+            <div class="prod-info">
+                <h3>XX99 MARK I</h3>
+                <button class="orangeButton"><a href="product-headphone2.html">SEE PRODUCT</a></button>
+            </div>
+        </div>
+        <div class="prod-box">
+            <div class="prod-img">
+                <img src="/images/products/headphones/image-xx59-headphones.jpg" class="imgBorders">
+            </div>
+            <div class="prod-info">
+                <h3>XX 59</h3>
+                <button class="orangeButton"><a href="product-headphone3.html">SEE PRODUCT</a></button>
+            </div>
+        </div>
+    </section>
+    <div class="categories">
+        <div class="category">
+            <img src="/images/image-category-thumbnail-headphones.png" alt="">
+            <div class="category-info">
+                <p style="font-size: 15px">HEADPHONES</p>
+                <a href="headphones.html">SHOP ></a>
+            </div>
+        </div>
+        <div class="category">
+            <img src="/images/image-category-thumbnail-speakers.png" alt="">
+            <div class="category-info">
+                <p style="font-size: 15px">SPEAKERS</p>
+                <a href="speakers.html">SHOP ></a>
+            </div>
+        </div>
+        <div class="category">
+            <img src="/images/image-category-thumbnail-earphones.png" alt="">
+            <div class="category-info">
+                <p style="font-size: 15px">EARPHONES</p>
+                <a href="earphones.html">SHOP ></a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="beforeFooter">
+    <div class="cont">
+        <div class="contText">
+            <h2>Bringing you the <span style="color: #D87D4A;">best</span> audio gear</h2>
+            <p>Located at the heart of New York City, Audiophile is the premier store for high end headphones, earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration rooms available for you to browse and experience a wide range of our products. Stop by our store to meet some of the fantastic people who make Audiophile the best place to buy your portable audio equipment.</p>
+        </div>
+        <img src="/images/image-best-gear.jpg" width="450" height="490px" style="border-radius: 8px;">
+    </div>
+</section>
+<section class="last">
+    <footer>
+        <div class="orange-line-footer"></div>
+        <div class="navBar">
+            <h3 style="color: white;">audiophile</h3>
+            <div class="itemList">
+                <a href="index.html">HOME</a>
+                <a href="headphones.html">HEADPHONES</a>
+                <a href="speakers.html">SPEAKERS</a>
+                <a href="earphones.html">EARPHONES</a>
+            </div>
+        </div>
+        <div class="footerText">
+            <div class="txt">
+                <p>Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility - we’re open 7 days a week.</p>
+            </div>
+            <div class="icons">
+                <img class="images-hover" src="/images/icon-facebook.svg" alt="">
+                <img class="images-hover" src="/images/icon-instagram.svg" alt="">
+                <img class="images-hover" src="/images/icon-twitter.svg" alt="">
+            </div>
+            <p>Copyright 2021. All Rights Reserved</p>
+        </div>
+    </footer>
+</section>
+     <!-- CART MODAL -->
+     <!-- The Modal -->
+     <div id="myModal" class="modal closeAllModal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="cart-remove">
+                <h4>CART (3)</h4>
+                <p style="opacity: 0.5; cursor: pointer;"><u>Remove all</u></p>
+            </div>
+            <div class="cart-item">
+                <div class="left-items">
+                    <img src="images/headphones/image-xx99-mark-two-headphones.jpg">
+                    <div class="left-item-text">
+                        <p>XX99 MK II</p>
+                        <p style="opacity: 0.5;">$ 2,999</p>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <span class="minus" style="opacity: 0.25;">-</span>
+                    <span class="value">1</span>
+                    <span class="plus" style="opacity: 0.25;">+</span>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="left-items">
+                    <img src="images/headphones/image-xx59-headphones.jpg">
+                    <div class="left-item-text">
+                        <p>XX59</p>
+                        <p style="opacity: 0.5;">$ 899</p>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <span class="minus" style="opacity: 0.25;">-</span>
+                    <span class="value">2</span>
+                    <span class="plus" style="opacity: 0.25;">+</span>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="left-items">
+                    <img src="images/earphones/image-product.jpg">
+                    <div class="left-item-text">
+                        <p>YX1</p>
+                        <p style="opacity: 0.5;">$ 599</p>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <span class="minus" style="opacity: 0.25;">-</span>
+                    <span class="value">1</span>
+                    <span class="plus" style="opacity: 0.25;">+</span>
+                </div>
+            </div>
+            <div class="total-cart">
+                <p style="opacity: 0.5;">TOTAL</p>
+                <p>$ 5,396</p>
+            </div>
+            <div class="checkout-button">
+                <button><a href="checkout.html" style="text-decoration: none; color: white;">CHECKOUT</a></button>
+            </div>
+        </div>
+    </div>
+    <!-- HAMBURGER MENU MODAL -->
+    <!-- The Modal -->
+    <div id="hamburger-modal" class="hamburger-modal closeAllModal">
+        <!-- Modal content -->
+            <div class="hamburger-modal-content">
+                <span class="close">&times;</span>
+                <div class="products">
+                    <div class="product-box">
+                        <img src="/images/image-category-thumbnail-headphones.png" width="200px" height="190px">
+                        <p class="upper">HEADPHONES</p>
+                        <a class="hover-text-orange" href="headphones.html" class="upper">SHOP ></a>
+                    </div>
+                    <div class="product-box">
+                        <img src="/images/image-category-thumbnail-speakers.png" width="200px" height="190px">
+                        <p class="upper">SPEAKERS</p>
+                        <a class="hover-text-orange" href="speakers.html" class="upper">SHOP ></a>
+                    </div>
+                    <div class="product-box">
+                        <img src="/images/image-category-thumbnail-earphones.png" width="200px" height="190px">
+                        <p class="upper">EARPHONES</p>
+                        <a class="hover-text-orange" href="earphones.html" class="upper">SHOP ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

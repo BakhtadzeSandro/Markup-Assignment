@@ -1,0 +1,114 @@
+@import "../base/base";
+.last{
+    width: 100%;
+    /* height: 365px; */
+    background-color: black;
+    margin-top: 150px;
+    .navBar{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+        @include tablet{
+            display: block;
+        }
+        @include mobile{
+            flex-direction: column;
+            gap: 30px;
+            text-align: center;
+            padding-top: 20px;
+        }
+        h3{
+            @include mobile{
+                font-size: 30px;
+                font-weight: 700;
+            }
+        }
+        .itemList{
+            @include tablet{
+                margin-top: 32px;
+            }
+            @include mobile{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            a{
+                padding-right: 15px;
+                text-decoration: none;
+                color: white;
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 25px;
+                letter-spacing: 2px;
+                &:hover{
+                    color:#D87D4A;
+                }
+            }
+        }
+    }
+    .footerText{
+        width: 78%;
+        margin: 0 11%;
+        @include mobile{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-top: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+        .txt{
+            width: 500px;
+            /* height: 100px; */
+            margin-top: 36px;
+            color: rgb(218, 208, 208);
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 25px;
+            @include tablet{
+                width: 100%;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 25px;
+                color: #FFFFFF;
+                mix-blend-mode: normal;
+                opacity: 0.5;
+            }
+            @include mobile{
+                order: 1;
+                margin-top: 0px;
+            }
+        }
+        p{
+            color: #FFFFFF;
+            margin-top: 56px;
+            @include mobile{
+                order: 2;
+                margin-top: 0px;
+            }
+        }
+        .icons{
+            order: 3;
+        }
+    }
+    .icons{
+        float: right;
+        img{
+            margin-right: 15px;
+            cursor: pointer;
+        }
+        @include tablet{
+            margin-top: 50px;
+        }
+    }
+}
+.navBar{
+    width: 78%;
+    margin: 0 11%;
+}
+.images-hover:hover{
+    filter: invert(0.4) sepia(1) saturate(20) hue-rotate(0deg) brightness(0.9);
+}
+footer{
+    height: 100%;
+}

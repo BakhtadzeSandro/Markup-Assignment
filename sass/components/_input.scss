@@ -1,0 +1,41 @@
+input[type=text], input[type=email]{
+    background: #FFFFFF;
+    border: 1px solid #CFCFCF;
+    border-radius: 8px;
+    margin-top: 9px;
+    height: 56px;
+    width: 100%;
+    padding-left: 24px;
+    
+}
+input[type=radio]:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #ffa500;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+input:focus{
+    outline: none;
+    border-color: #D87D4A;
+}
+input[type=radio]{
+    margin: 20px;
+    font-weight: 700;
+}
+input::placeholder{
+    @include mobile{
+        font-size: 14px;
+    }
+}
+label{
+    @include mobile{
+        font-size: 14px;
+    }
+}

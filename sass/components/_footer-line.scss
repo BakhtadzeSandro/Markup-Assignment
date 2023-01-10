@@ -1,0 +1,9 @@
+.orange-line-footer{
+    margin: 0 11%;
+    width: 100px;
+    height: 4px;
+    background-color: #D87D4A;
+    @include mobile{
+        margin: auto;
+    }
+}

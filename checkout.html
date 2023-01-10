@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/styles/checkout.css">
+    <link rel="stylesheet" href="/styles/modal.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <script src="/src/modal.js" defer></script>
+    <script src="/src/checkout.js" defer></script>
+    <script src="/src/radioButtonTrack.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet">
+    <title>Checkout</title>
+</head>
+<body style="background-color: #F2F2F2;">
+    <header>
+        <nav>
+            <div class="logo">
+                <div id="hamburger-menu" class="hamburger-menu">
+                    <div class="hamburger-menu-line"></div>
+                    <div class="hamburger-menu-line"></div>
+                    <div class="hamburger-menu-line"></div>
+                </div>
+                <p>audiophile</p>
+            </div>
+            <p class="mobile-center-audiophile">audiophile</p>
+            <div class="center-items">
+                <a class="hover-text-orange" href="index.html">HOME</a>
+                <a class="hover-text-orange" href="headphones.html">HEADPHONES</a>
+                <a class="hover-text-orange" href="speakers.html">SPEAKERS</a>
+                <a class="hover-text-orange" href="earphones.html">EARPHONES</a>
+              </div>
+            <div class="cart">
+                <img src="/images/icon-cart.svg" style="cursor: pointer;" id="modal-cart">
+            </div>
+        </nav>
+    </header>
+    <div class="goBack">
+        <a href="#" onclick="window.history.back()">Go Back</a>
+    </div>
+    <div class="checkout-content">
+        <section class="checkout-form">
+            <form action="#">
+                <h2>CHECKOUT</h2>
+                <p>BILLING DETAILS</p>
+                <div class="firstPart">
+                    <div class="form-box">
+                        <h4>Name</h4>
+                        <input type="text" required placeholder="Alexei Ward">
+                    </div>
+                    <div class="form-box" id="email-box">
+                        <div class="email-headings">
+                            <h4>Email Address</h4> 
+                            <h5 id="email-val">WRONG FORMAT</h5>
+                        </div>
+                        <input id="email" type="email" required placeholder="alexei@mail.com">
+                    </div>
+                </div>
+                <div class="form-box">
+                    <h4>Phone Number</h4>
+                    <input type="text" required placeholder="+1 202-555-0136">
+                </div>
+                <div class="secondPart">
+                    <p>SHIPPING INFO</p>
+                    <div class="form-box-full">
+                        <h4>Address</h4>
+                        <input type="text" required placeholder="1137 Williams Avenue">
+                    </div>
+                    <div class="firstPart">
+                        <div class="form-box">
+                            <h4>ZIP Code</h4>
+                            <input type="text" required placeholder="10001">
+                        </div>
+                        <div class="form-box">
+                            <h4>City</h4>
+                            <input type="text" required placeholder="New York">
+                        </div>
+                    </div>
+                    <div class="form-box">
+                        <h4>Country</h4>
+                        <input type="text" required placeholder="United States">
+                    </div>
+                </div>
+                <div class="thirdPart">
+                    <p>PAYMENT DETAILS</p>
+                    <div class="payments">
+                        <div class="left-side">
+                            <h4>Payment Method</h4>
+                        </div>
+                        <div class="right-side">
+                            <div class="radio-box" id="e-money-box">
+                                <input id="emoney" type="radio" name="method" value="e-Money">
+                                <label for="e-Money">e-Money</label>
+                            </div>
+                            <div class="radio-box" id="cash-box">
+                                <input id="cash" type="radio" name="method" value="cash-on-delivery">
+                                <label for="cash-on-delivery">Cash on Delivery</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="firstPart" id="firstPart">
+                    <div class="form-box">
+                        <h4>e-Money Number</h4>
+                        <input type="text" required placeholder="238521993">
+                    </div>
+                    <div class="form-box">
+                        <h4>e-Money PIN</h4>
+                        <input type="text" required placeholder="6891">
+                    </div>
+                </div>
+                <div class="secondPart-radio" id="secondPart-radio">
+                    <div class="second-part-icon">
+                        <img src="/images/icon-cash-on-delivery.svg">
+                    </div>
+                    <div class="second-part-text">
+                        <p>The ‘Cash on Delivery’ option enables you to pay in cash when our delivery courier arrives at your residence. Just make sure your address is correct so that your order will not be cancelled.</p>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <div class="summary">
+            <div class="summary-content">
+                <h4>SUMMARY</h4>
+                <div class="summary-product">
+                    <img src="/images/headphones/image-xx99-mark-two-headphones.jpg">
+                    <div class="summary-product-info">
+                        <p><strong>XX99 MK II</strong></p>
+                        <p style="opacity: 0.5;">$ 2,999</p>
+                        <p style="opacity: 0.5;">x1</p>
+                    </div>
+                </div>
+                <div class="summary-product">
+                    <img src="/images/headphones/image-xx59-headphones.jpg">
+                    <div class="summary-product-info">
+                        <p><strong>XX99 MK II</strong></p>
+                        <p style="opacity: 0.5;">$ 2,999</p>
+                        <p style="opacity: 0.5;">x1</p>
+                    </div>
+                </div>
+                <div class="summary-product">
+                    <img src="/images/earphones/image-product.jpg">
+                    <div class="summary-product-info">
+                        <p><strong>XX99 MK II</strong></p>
+                        <p style="opacity: 0.5;">$ 2,999</p>
+                        <p style="opacity: 0.5;">x1</p>
+                    </div>
+                </div>
+                <div class="summary-details">
+                    <p style="opacity: 0.5; font-size: 13px;">TOTAL</p>
+                    <p>$ 5,396</p>
+                </div>
+                <div class="summary-details">
+                    <p style="opacity: 0.5; font-size: 13px;">SHIPPING</p>
+                    <p>$ 50</p>
+                </div>
+                <div class="summary-details">
+                    <p style="opacity: 0.5; font-size: 13px;">VAT(INCLUDED)</p>
+                    <p>$ 1,079</p>
+                </div>
+                <div class="summary-details">
+                    <p style="opacity: 0.5; font-size: 13px;">GRAND TOTAL</p>
+                    <p style="color: #D87D4A">$ 5,446</p>
+                </div>
+                <button class="pay" id="checkout">CONTINUE & PAY</button>
+            </div>
+        </div>
+    </div>
+    <section class="last">
+        <footer>
+            <div class="orange-line-footer"></div>
+            <div class="navBar">
+                <h3 style="color: white;">audiophile</h3>
+                <div class="itemList">
+                    <a href="index.html">HOME</a>
+                    <a href="headphones.html">HEADPHONES</a>
+                    <a href="speakers.html">SPEAKERS</a>
+                    <a href="earphones.html">EARPHONES</a>
+                </div>
+            </div>
+            <div class="footerText">
+                <div class="txt">
+                    <p>Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility - we’re open 7 days a week.</p>
+                </div>
+                <div class="icons">
+                    <img class="images-hover" src="/images/icon-facebook.svg" alt="">
+                    <img class="images-hover" src="/images/icon-instagram.svg" alt="">
+                    <img class="images-hover" src="/images/icon-twitter.svg" alt="">
+                </div>
+                <p>Copyright 2021. All Rights Reserved</p>
+            </div>
+        </footer>
+    </section>
+    <!-- CART MODAL -->
+     <!-- The Modal -->
+     <div id="myModal" class="modal closeAllModal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <!-- <span class="close">&times;</span> -->
+            <div class="cart-remove">
+                <h4>CART (3)</h4>
+                <p style="opacity: 0.5; cursor: pointer;"><u>Remove all</u></p>
+            </div>
+            <div class="cart-item">
+                <div class="left-items">
+                    <img src="images/headphones/image-xx99-mark-two-headphones.jpg">
+                    <div class="left-item-text">
+                        <p>XX99 MK II</p>
+                        <p style="opacity: 0.5;">$ 2,999</p>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <span class="minus" style="opacity: 0.25;">-</span>
+                    <span class="value">1</span>
+                    <span class="plus" style="opacity: 0.25;">+</span>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="left-items">
+                    <img src="images/headphones/image-xx59-headphones.jpg">
+                    <div class="left-item-text">
+                        <p>XX59</p>
+                        <p style="opacity: 0.5;">$ 899</p>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <span class="minus" style="opacity: 0.25;">-</span>
+                    <span class="value">2</span>
+                    <span class="plus" style="opacity: 0.25;">+</span>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="left-items">
+                    <img src="images/earphones/image-product.jpg">
+                    <div class="left-item-text">
+                        <p>YX1</p>
+                        <p style="opacity: 0.5;">$ 599</p>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <span class="minus" style="opacity: 0.25;">-</span>
+                    <span class="value">1</span>
+                    <span class="plus" style="opacity: 0.25;">+</span>
+                </div>
+            </div>
+            <div class="total-cart">
+                <p style="opacity: 0.5;">TOTAL</p>
+                <p>$ 5,396</p>
+            </div>
+            <div class="checkout-button">
+                <button><a href="checkout.html" style="text-decoration: none; color: white;">CHECKOUT</a></button>
+            </div>
+        </div>
+    </div>
+    <!-- CHECKOUT MODAL -->
+    <!-- The Modal -->
+    <div id="checkout-modal" class="checkout-modal-class closeAllModal">
+    <!-- Modal content -->
+        <div class="checkout-modal-content">
+            <!-- <span class="checkout-close">&times;</span> -->
+            <img src="/images/icon-order-confirmation.svg" alt="">
+            <div class="thanks-message">
+                <p>THANK YOU<br>FOR YOUR ORDER</p>
+            </div>
+            <div class="confirm-message">
+                <p>You will receive an email confirmation shortly.</p>
+            </div>
+            <div class="confirm-products">
+                <div class="modal-left">
+                    <div class="confirm-products-left">
+                        <img src="/images/headphones/image-xx99-mark-two-headphones.jpg">
+                        <div class="inf">
+                            <p>XX99 MK II</p>
+                            <p style="opacity: 0.5;">$ 2,999</p>
+                        </div>
+                        <p style="opacity: 0.5;">x1</p>
+                    </div>
+                    <hr class="modal-hr">
+                    <p class="modal-last-text">and 2 other item(s)</p>
+                </div>
+                <div class="confirm-products-right">
+                    <h3 class="total-payment">GRAND TOTAL</h3>
+                    <h3 class="payment-money">$ 5,446</h3>
+                </div>
+            </div>
+            <button class="modal-button"><a href="index.html" style="text-decoration: none; color: white;">BACK TO HOME</a></button>
+        </div>
+    </div>
+    <!-- HAMBURGER MENU MODAL -->
+    <!-- The Modal -->
+    <div id="hamburger-modal" class="hamburger-modal closeAllModal">
+        <!-- Modal content -->
+            <div class="hamburger-modal-content">
+                <span class="close">&times;</span>
+                <div class="products">
+                    <div class="product-box">
+                        <img src="/images/image-category-thumbnail-headphones.png" width="200px" height="190px">
+                        <p class="upper">HEADPHONES</p>
+                        <a class="hover-text-orange" href="headphones.html" class="upper">SHOP ></a>
+                    </div>
+                    <div class="product-box">
+                        <img src="/images/image-category-thumbnail-speakers.png" width="200px" height="190px">
+                        <p class="upper">SPEAKERS</p>
+                        <a class="hover-text-orange" href="speakers.html" class="upper">SHOP ></a>
+                    </div>
+                    <div class="product-box">
+                        <img src="/images/image-category-thumbnail-earphones.png" width="200px" height="190px">
+                        <p class="upper">EARPHONES</p>
+                        <a class="hover-text-orange" href="earphones.html" class="upper">SHOP ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

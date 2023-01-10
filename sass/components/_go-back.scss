@@ -1,0 +1,15 @@
+.goBack{
+    padding: 76px 11.45% 56px 11.45%;
+}
+.goBack a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    &:hover{
+        color: #D87D4A;
+    }
+}
