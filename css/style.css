@@ -936,8 +936,9 @@ header {
         font-size: 21px;
         font-weight: bold;
         color: white; } }
-  .firstSection nav .logo p {
-    display: none; }
+  @media only screen and (max-width: 768px) {
+    .firstSection nav .logo p {
+      display: none; } }
   .firstSection .homeText .main h2 {
     font-size: 36px; }
 

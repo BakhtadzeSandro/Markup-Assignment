@@ -28,7 +28,10 @@
         }
         .logo{
             p{
-                display: none;
+                // display: none;
+                @include mobile{
+                    display: none;
+                }
             }
         }
     }
